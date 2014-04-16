@@ -1,0 +1,12 @@
+.<%= _.camelize(widget.name) %> {
+
+    /* Yours styles for front side goes here */
+
+}
+<% if(widget.configurable) { %>
+.<%= _.camelize(widget.name) %>Edit {
+
+    /* Yours styles for back side goes here */
+
+}
+<% } %>
