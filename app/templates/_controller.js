@@ -4,11 +4,10 @@ angular.module('dashboard')
 
         //front side logic goes here
 
-    }])
-    <% if(widget.configurable) { %>
+    }])<% if(widget.configurable) { %>
+
     .controller('<%= _.camelize(widget.name) %>EditCtrl', ['$scope', function($scope) {
 
         //back side configuration logic goes here
 
-    }])
-    <% } %>
+    }])<% } %>;

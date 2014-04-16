@@ -1,6 +1,6 @@
 angular.module('dashboard')
     .config(function(widgetServiceProvider) {
-        widgetServiceProvider.register('<%= _.camelize(widget.name) %>', {
+        widgetServiceProvider.register('<%= widget.name %>', {
             sizex: <%= widget.width %>,
             sizey: <%= widget.height %>,  <% if(widget.color){ %>
             color: '<%= widget.color %>', <% } %>
